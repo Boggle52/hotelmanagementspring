@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.human.booking.iRoom">
+<select id="listRoom" resultType="com.human.booking.hotelroomDTO">
+	select a.roomnum, a.roomname, b.roomtype, a.person, a.price 
+	from hotelroom a, roomtype b where a.typenum=b.typenum order by person
+</select>
+<select id="addnewRoom">
+	insert into hotelroom values(room_seq.nextval,#{param1},#{param2},#{param3},#{param4})
+</select>
+<delete id="deleteRoom">
+	delete from hotelroom where roomnum=#{param}
+</delete>
+<update id="updateRoom">
+	update hotelroom set roomname=#{param2}, typenum=#{param3}, person=#{param4}, 
+	price=#{param5} where roomnum=#{param1}
+</update>
+<select id="listType" resultType="com.human.booking.typelistDTO">
+	select * from roomtype order by typenum
+</select>
+</mapper>

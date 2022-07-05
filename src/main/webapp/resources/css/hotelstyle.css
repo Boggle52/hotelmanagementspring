@@ -1,0 +1,61 @@
+body{
+	background-image:url('https://i.pinimg.com/originals/ac/dd/20/acdd208a94f673b3acb8ffb62abb9ca9.gif');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+select{
+    width: 350px;
+    font-size: 19px !important;
+}
+#roomtype, #_roomtype{
+	width: 200px;
+}
+#base{
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+    width: 1200px;
+    height: 610px;
+    text-align: center;
+}
+#base2{
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+    width: 800px;
+    height: 610px;
+    text-align: center;
+}
+#inner{
+    width: 360px;
+    height: 450px;
+    margin: 20px;
+}
+#right{
+    text-align: right;
+}
+#left{
+    text-align: left;
+}
+text{
+    width: 200px;
+}
+number{
+    width: 200px;
+}
+#top{
+    vertical-align: top;
+}
+input[type="date"]{
+    width: 93px;
+    font-size: 13px;
+}
+input[type="button"]{
+	text-align: center;
+}
+#border{   
+    border: solid black 1px;
+}
+* {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
